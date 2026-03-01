@@ -1038,6 +1038,12 @@
     });
 
     steps.forEach(step => stepObserver.observe(step));
+
+    const COMMUNITY_VIDEO_PLAYBACK_RATE = 0.5;
+    const communityVideo = document.querySelector('.portrait video');
+    if (communityVideo) {
+        communityVideo.playbackRate = COMMUNITY_VIDEO_PLAYBACK_RATE;
+    }
 </script>
 </body>
 </html>
